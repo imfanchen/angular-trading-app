@@ -1,3 +1,3 @@
-# i72-bgccgq
+# angular-trading-app
 
-[Edit on StackBlitz ⚡️](https://stackblitz.com/edit/i72-bgccgq)
+Simple Trading App Built with Angular/Typescript
