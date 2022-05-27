@@ -1,0 +1,31 @@
+<h3>Trade Ticket</h3>
+<div class="tiles-section">
+  <button
+    class="price-tile"
+    [disabled]="!form.valid"
+    (click)="priceTileClicked('Buy')"
+  >
+    <div class="side">Buy</div>
+    <div class="price">{{ (prices$ | async).buy }}</div>
+    <div class="currency">USD</div>
+  </button>
+  <button
+    class="price-tile"
+    [disabled]="!form.valid"
+    (click)="priceTileClicked('Sell')"
+  >
+    <div class="side">Sell</div>
+    <div class="price">{{ (prices$ | async).sell }}</div>
+    <div class="currency">USD</div>
+  </button>
+</div>
+<form [formGroup]="form">
+  <label>Stock *</label>
+  <select formControlName="stock">
+    <option></option>
+    <option *ngFor="let stock of stocks">{{ stock.name }}</option>
+  </select>
+
+  <label>Amount *</label>
+  <input type="number" formControlName="amount" />
+</form>

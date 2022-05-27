@@ -1,0 +1,9 @@
+<div class="trade-section">
+  <app-trade-ticket (tradeExecuted)="addTrade($event)"></app-trade-ticket>    
+</div>
+<div>
+  <app-trade-blotter [trades]="trades"></app-trade-blotter>
+</div>
+<div>
+  <app-position-blotter [positions]="positions"></app-position-blotter>
+</div>

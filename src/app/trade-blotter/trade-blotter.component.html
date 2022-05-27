@@ -1,0 +1,16 @@
+<h3>Trade Blotter</h3>
+<table>
+  <tr>
+    <th>Stock</th>
+    <th>Side</th>
+    <th>Amount</th>
+    <th>Price</th>
+  </tr>
+
+  <tr *ngFor="let trade of trades">
+    <td>{{ trade.stock }}</td>
+    <td>{{ trade.side }}</td>
+    <td>{{ trade.amount }}</td>
+    <td>{{ trade.price }}</td>
+  </tr>
+</table>

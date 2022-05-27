@@ -1,0 +1,12 @@
+<h3>Position Blotter</h3>
+<table>
+  <tr>
+    <th>Stock</th>
+    <th>Quantity</th>
+  </tr>
+
+  <tr *ngFor="let position of positions">
+    <td>{{ position.stock }}</td>
+    <td>{{ position.quantity }}</td>
+  </tr>
+</table>
